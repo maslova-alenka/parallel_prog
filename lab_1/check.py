@@ -36,54 +36,40 @@ def write_results_to_file(size, results, filename):
 def plot_time_vs_matrix_size(filename):
     sizes, times = [], []
     
+    # with open(filename, 'r') as file:
+    #     for line in file:
+    #         parts = line.split(", ")
+    #         size_part = parts[0].split(": ")[1]
+    #         time_part = parts[1].split(": ")[1].replace(" seconds", "")
+    #         sizes.append(int(size_part.split("x")[0]))
+    #         times.append(float(time_part))
+
+    # sizes = []
+    # times = []
     with open(filename, 'r') as file:
         for line in file:
-            parts = line.split(", ")
-            size_part = parts[0].split(": ")[1]
-            time_part = parts[1].split(": ")[1].replace(" seconds", "")
-            sizes.append(int(size_part.split("x")[0]))
-            times.append(float(time_part))
+            parts = line.split()
+            size = int(parts[1])
+            time = float(parts[3])
+            sizes.append(size)
+            times.append(time)
 
     plt.figure(figsize=(10, 6))
-    plt.plot(sizes, times, marker='o', linestyle='-', color='b')
+    plt.plot(sizes, times, marker='*', markersize=10, linestyle='-', color='lime')
     plt.title('Зависимость времени от размера матрицы')
-    plt.xlabel('Размер матрицы (строки x столбцы)')
-    plt.ylabel('Время (секунды)')
+    plt.xlabel('Размер матрицы')
+    plt.ylabel('Время (с)')
     plt.xticks(sizes)
-    plt.grid()
-    plt.savefig('time_vs_size.png')
     plt.show()
 
 
 if __name__ == "__main__":
-    # matrix_sizes = [100]
     matrix_sizes = [100, 250, 500, 750, 1000, 1500, 2000, 2500]
     results = []
 
-    matrix = read_matrix_from_file(PATH + f"matrix_100/m_1_100.txt")
-    if matrix is not None:
-
-        print(matrix)
-    else:
-        print("Не удалось прочитать матрицу из файла.")
-
-    
-    matrix2 = read_matrix_from_file(PATH + f"matrix_100/m_2_100.txt")
-    if matrix2 is not None:
-
-        print(matrix2)
-    else:
-        print("Не удалось прочитать матрицу из файла.")
-
-
-
     for size in matrix_sizes:
-        print("начался цикл {size}")
         is_correct = check_matrix_multiplication(size)
-        print(is_correct)
         results.append((size, is_correct))
-        print(results)
         write_results_to_file(size, results, PATH_2 + "check.txt")
-        print("записано")
 
-    plot_time_vs_matrix_size("results.txt")
+    plot_time_vs_matrix_size(PATH_2 + "result.txt")
