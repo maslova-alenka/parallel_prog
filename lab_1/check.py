@@ -35,17 +35,6 @@ def write_results_to_file(size, results, filename):
 
 def plot_time_vs_matrix_size(filename):
     sizes, times = [], []
-    
-    # with open(filename, 'r') as file:
-    #     for line in file:
-    #         parts = line.split(", ")
-    #         size_part = parts[0].split(": ")[1]
-    #         time_part = parts[1].split(": ")[1].replace(" seconds", "")
-    #         sizes.append(int(size_part.split("x")[0]))
-    #         times.append(float(time_part))
-
-    # sizes = []
-    # times = []
     with open(filename, 'r') as file:
         for line in file:
             parts = line.split()
