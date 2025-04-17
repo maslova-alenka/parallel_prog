@@ -1,0 +1,8 @@
+Size: 100 Time: 0.017 Threads: 2
+Size: 250 Time: 0.197 Threads: 2
+Size: 500 Time: 1.373 Threads: 2
+Size: 750 Time: 5.135 Threads: 2
+Size: 1000 Time: 13.34 Threads: 2
+Size: 1500 Time: 50.492 Threads: 2
+Size: 2000 Time: 115.485 Threads: 2
+Size: 2500 Time: 250.33 Threads: 2

@@ -1,0 +1,8 @@
+Size: 100 Time: 0.013 Threads: 3
+Size: 250 Time: 0.166 Threads: 3
+Size: 500 Time: 1.229 Threads: 3
+Size: 750 Time: 4.839 Threads: 3
+Size: 1000 Time: 9.286 Threads: 3
+Size: 1500 Time: 46.56 Threads: 3
+Size: 2000 Time: 110.56 Threads: 3
+Size: 2500 Time: 209.949 Threads: 3

@@ -1,0 +1,4 @@
+﻿  lab2.cpp
+C:\Repository\lab_parallel_prog\lab_2\lab2\lab2.cpp(57,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Repository\lab_parallel_prog\lab_2\lab2\lab2.cpp(56,31): warning C4101: i: неиспользованная локальная переменная
+  lab2.vcxproj -> C:\Repository\lab_parallel_prog\lab_2\lab2\x64\Debug\lab2.exe
