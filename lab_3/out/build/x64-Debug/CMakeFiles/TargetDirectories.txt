@@ -1,0 +1,3 @@
+C:/Repository/lab_parallel_prog/lab3/out/build/x64-Debug/CMakeFiles/MPI_Project.dir
+C:/Repository/lab_parallel_prog/lab3/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Repository/lab_parallel_prog/lab3/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+Size: 100 | Time: 0.016062 sec | Processes: 1
+Size: 250 | Time: 0.231276 sec | Processes: 1
+Size: 500 | Time: 1.91617 sec | Processes: 1
+Size: 750 | Time: 5.85539 sec | Processes: 1
+Size: 1000 | Time: 13.5889 sec | Processes: 1
+Size: 1500 | Time: 45.9748 sec | Processes: 1
+Size: 2000 | Time: 120.432 sec | Processes: 1
+Size: 2500 | Time: 266.543 sec | Processes: 1

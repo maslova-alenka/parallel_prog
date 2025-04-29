@@ -1,0 +1,7 @@
+# ninja log v5
+2	1033	7675408189664258	CMakeFiles/MPI_Project.dir/lab3.cpp.obj	e0f3eb9ebb744e4e
+1045	1614	7675408194737741	MPI_Project.exe	7ef9bebb05dc6d9
+13	793	7676498195252582	CMakeFiles/MPI_Project.dir/supercomp.cpp.obj	41e0b06308d24a62
+2	1115	7676498198464877	CMakeFiles/MPI_Project.dir/lab3.cpp.obj	e0f3eb9ebb744e4e
+3	87	7676498494573060	CMakeFiles/MPI_Project.dir/supercomp.cpp.obj	41e0b06308d24a62
+89	571	7676498498586783	MPI_Project.exe	3173e8d26848e7f3
